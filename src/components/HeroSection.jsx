@@ -86,7 +86,7 @@ const HeroSection = () => {
           <span className="mr-2">✨</span>
           Fullstack Developer Portfolio
         </div>
-        <h1 className="animate-heading text-5xl md:text-6xl mb-6 flex flex-wrap justify-center md:justify-start gap-2">
+        <h1 className="animate-heading text-4xl sm:text-5xl md:text-6xl mb-4 flex flex-wrap justify-center md:justify-start gap-2">
           Mang đến
           <FlipWords />
           <span className="bg-gradient-to-r from-purple-400 via-blue-400 to-cyan-400 text-transparent bg-clip-text">
@@ -95,7 +95,7 @@ const HeroSection = () => {
           Tốt nhất
         </h1>
 
-        <p className="animate-paragraph text-lg text-gray-300 mb-8 max-w-lg">
+        <p className="animate-paragraph text-lg text-gray-300 m-4 sm:m-0 max-w-lg ">
           Xin chào , mình tên “ Dev nhà quê “ một người học lập trình. Mình yêu
           Việc biến ý tưởng thành sản phẩm, và luôn tin rằng chỉ cần chịu học,
           quê hay phố không quan trọng .
@@ -106,7 +106,7 @@ const HeroSection = () => {
       </div>
 
       {/* Cột phải - icon công nghệ */}
-      <div ref={rightRef} className="md:col-span-6 relative opacity-0">
+      <div ref={rightRef} className=" md:col-span-6 relative opacity-0 ">
         <TechIcons />
       </div>
     </section>

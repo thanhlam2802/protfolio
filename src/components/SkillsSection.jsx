@@ -128,19 +128,28 @@ const SkillsSection = () => {
 
         <h2
           ref={titleRef}
-          className="bg-gradient-to-r from-purple-400 via-blue-400 to-cyan-400 text-transparent bg-clip-text text-4xl md:text-5xl  mb-4 opacity-0"
+          className="bg-gradient-to-r from-purple-400 via-blue-400 to-cyan-400 text-transparent bg-clip-text text-3xl sm:text-4xl md:text-5xl  mb-1 sm:mb-4 opacity-0"
         >
           Công nghệ sử dụng
         </h2>
-        <p ref={descRef} className="text-xl font-light italic opacity-0">
+        <p
+          ref={descRef}
+          className="text-base sm:text-lg font-light italic opacity-0"
+        >
           Mình tin rằng công nghệ không phân biệt nơi bạn bắt đầu, mà quan trọng
           là bạn dám bắt đầu
         </p>
       </div>
 
-      <div ref={iconsContainerRef} className="flex flex-col items-center gap-4">
+      <div
+        ref={iconsContainerRef}
+        className="flex flex-col items-center gap-3 sm:gap-4"
+      >
         {techRows.map((row, rowIndex) => (
-          <div key={rowIndex} className="flex gap-6 justify-center">
+          <div
+            key={rowIndex}
+            className="flex gap-2 sm:gap-6 md:gap-6 justify-center"
+          >
             {row.map((tech, index) => {
               const absoluteIndex =
                 techRows
@@ -149,7 +158,7 @@ const SkillsSection = () => {
               return (
                 <div
                   key={index}
-                  className="w-16 h-16 md:w-20 md:h-20 flex items-center justify-center cursor-grab"
+                  className="w-10 h-10 sm:w-14 sm:h-14 md:w-20 md:h-20 flex items-center justify-center cursor-grab"
                   ref={(el) => (iconRefs.current[absoluteIndex] = el)}
                 >
                   <img

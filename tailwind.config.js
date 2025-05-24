@@ -7,6 +7,7 @@ export default {
 
   theme: {
     extend: {
+      
       keyframes: {
         "flip-words": {
           "0%, 10%": { transform: "translateY(0%)" },

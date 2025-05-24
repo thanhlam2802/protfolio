@@ -119,11 +119,14 @@ const ProjectsSection = () => {
       <div className="col-span-12 text-center">
         <h2
           ref={titleRef}
-          className="text-4xl mb-4 bg-gradient-to-r from-purple-400 via-blue-400 to-cyan-400 text-transparent bg-clip-text"
+          className="text-3xl sm:text-4xl md:text-5xl  bg-gradient-to-r from-purple-400 via-blue-400 to-cyan-400 text-transparent bg-clip-text mb-1 sm:mb-2 md:mb-4"
         >
           Dự án nổi bật
         </h2>
-        <p ref={subtitleRef} className="text-lg text-gray-300 italic">
+        <p
+          ref={subtitleRef}
+          className="text-xl sm:text-2xl md-text-3xl text-gray-300 italic"
+        >
           Một số sản phẩm mình đã thực hiện hoặc đang phát triển
         </p>
       </div>
@@ -132,7 +135,7 @@ const ProjectsSection = () => {
         <div
           key={index}
           ref={(el) => (cardsRef.current[index] = el)}
-          className="col-span-12 md:col-span-6 lg:col-span-4 bg-white bg-opacity-5 p-5 rounded-2xl shadow-md backdrop-blur-sm hover:scale-[1.02] transition-all flex flex-col justify-between"
+          className="m-4 sm:m-2 md:m-0 col-span-12 md:col-span-6 lg:col-span-4 bg-white bg-opacity-5 p-4 rounded-2xl shadow-md backdrop-blur-sm hover:scale-[1.02] transition-all flex flex-col justify-between"
         >
           <div>
             <div className="relative w-full h-48 mb-4 overflow-hidden rounded-xl">
@@ -143,7 +146,7 @@ const ProjectsSection = () => {
               />
             </div>
 
-            <h3 className="text-xl font-semibold mb-2">{project.title}</h3>
+            <h3 className="text-lg mb-2">{project.title}</h3>
             <p className="text-sm text-gray-300 mb-3">{project.description}</p>
             <div className="flex flex-wrap gap-2 mb-4">
               {project.tech.map((t, i) => (

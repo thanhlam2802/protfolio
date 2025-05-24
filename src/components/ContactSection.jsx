@@ -144,7 +144,7 @@ const ContactSection = () => {
     >
       <h1
         ref={titleRef}
-        className="col-span-12 text-4xl  text-purple-400 text-center mb-12 flex justify-center items-center"
+        className="col-span-12 text-3xl sm:text-4xl md:text-5xl   text-purple-400 text-center mb-4 sm:mb-6 md:mb-8  flex justify-center items-center"
       >
         Liên hệ
       </h1>
@@ -215,7 +215,7 @@ const ContactSection = () => {
         className=" col-span-12 md:col-span-5 p-8 rounded-2xl bg-[#1e293b]/80 backdrop-blur-md shadow-lg border border-white/10 "
         style={{ alignSelf: "flex-start" }}
       >
-        <h2 className="text-2xl md:text-3xl font-bold text-purple-300 mb-4">
+        <h2 className="text-2xl md:text-3xl  text-purple-300 mb-4">
           Kết nối với mình
         </h2>
         <p className="text-white/80 mb-4">

@@ -126,7 +126,7 @@ const About = () => {
         ease: "power2.out",
         scrollTrigger: {
           trigger: sectionRef.current,
-          start: "top 40%",
+          start: "top 50%",
           end: "bottom top 80%",
           toggleActions: "play reverse play reverse",
         },
@@ -139,7 +139,7 @@ const About = () => {
         ease: "power2.out",
         scrollTrigger: {
           trigger: sectionRef.current,
-          start: "top 40%",
+          start: "top 50%",
           end: "bottom top 80%",
           toggleActions: "play reverse play reverse",
         },
@@ -151,7 +151,7 @@ const About = () => {
         ease: "power2.out",
         scrollTrigger: {
           trigger: sectionRef.current,
-          start: "top 40%",
+          start: "top 50%",
           end: "bottom top 80%",
           toggleActions: "play reverse play reverse",
         },
@@ -164,7 +164,7 @@ const About = () => {
         ease: "power2.out",
         scrollTrigger: {
           trigger: sectionRef.current,
-          start: "top 40%",
+          start: "top 50%",
           end: "bottom top 80%",
           toggleActions: "play reverse play reverse",
         },
@@ -178,7 +178,7 @@ const About = () => {
         ease: "power2.out",
         scrollTrigger: {
           trigger: sectionRef.current,
-          start: "top 40%",
+          start: "top 50%",
           end: "bottom top 80%",
           toggleActions: "play reverse play reverse",
         },
@@ -192,7 +192,7 @@ const About = () => {
         ease: "back.out(1.7)",
         scrollTrigger: {
           trigger: sectionRef.current,
-          start: "top 20%",
+          start: "top 50%",
           end: "bottom top 80%",
           toggleActions: "play reverse play reverse",
         },
@@ -203,53 +203,60 @@ const About = () => {
   }, []);
 
   return (
-    <section ref={sectionRef} id="about" className="px-4 md:px-8">
+    <section
+      ref={sectionRef}
+      id="about"
+      className="px-8 md:px-0 sm:px-6 items-center overflow-hidden"
+    >
       <h1
         ref={headingRef}
-        className="text-5xl bg-gradient-to-r from-purple-400 via-blue-400 to-cyan-400 text-transparent bg-clip-text mb-12 text-center"
+        className="text-3xl sm:text-4xl md:text-5xl bg-gradient-to-r from-purple-400 via-blue-400 to-cyan-400 text-transparent bg-clip-text mb-8 sm:mb-10 md:mb-12 text-center"
       >
         Giới thiệu về tôi
       </h1>
 
-      <div className="max-w-6xl w-full grid grid-cols-12 gap-10">
+      <div className="max-w-6xl w-full grid grid-cols-1 sm:grid-cols-12 gap-8  sm:gap-10">
         {/* Chữ căn lề trái */}
-        <div className="col-span-12 md:col-span-6 text-left flex flex-col justify-center">
-          <p ref={introRef} className="text-3xl text-white mb-4">
+        <div className="col-span-12 sm:col-span-6 text-left flex flex-col justify-center">
+          <p
+            ref={introRef}
+            className="text-xl sm:text-2xl md-text-3xl text-white mb-1 sm:mb-4"
+          >
             Chào bạn!
           </p>
 
           <h2
             ref={text1Ref}
-            className="text-3xl text-white mb-4 whitespace-pre"
+            className="text-xl sm:text-2xl md:text-3xl  text-white mb-1 sm:mb-4 whitespace-pre"
           >
             {displayedText}
-            <span className="inline-block w-1 h-8 bg-white animate-blink ml-1 align-bottom"></span>
+            <span className="inline-block w-1 h-6 sm:h-8 bg-white animate-blink ml-1 align-bottom"></span>
           </h2>
 
           <p
             ref={textRef}
-            className="text-lg text-gray-300 mb-6 leading-relaxed"
+            className="text-base sm:text-lg text-gray-300 mb-4 sm:mb-6 leading-relaxed"
           >
             Là một lập trình viên đam mê công nghệ Web. Mình hiện là sinh viên
             năm 2 tại FPT Polytechnic, yêu thích xây dựng những sản phẩm có giao
             diện đẹp mắt và trải nghiệm mượt mà.
           </p>
 
-          <div ref={buttonsRef} className="flex justify-start space-x-4">
-            <StyledWrapper>
-              <button>Tải CV</button>
+          <div ref={buttonsRef} className="flex flex-row gap-1 mt-2 w-full">
+            <StyledWrapper className="flex-1">
+              <button className="w-full">Tải CV</button>
             </StyledWrapper>
-            <StyledWrapper>
-              <button>Liên Hệ</button>
+            <StyledWrapper className="flex-1">
+              <button className="w-full">Liên Hệ</button>
             </StyledWrapper>
           </div>
         </div>
 
         {/* Avatar căn lề phải */}
-        <div className="col-span-12 md:col-span-6 flex justify-end items-center">
+        <div className="col-span-12 sm:col-span-6 flex justify-center sm:justify-end items-center px-4 sm:px-0">
           <div
             ref={imageRef}
-            className="relative w-96 h-96 rounded-full overflow-hidden shadow-xl border border-white/10 group"
+            className="relative w-60 h-60 sm:w-80 sm:h-80 md:w-96 md:h-96 rounded-full overflow-hidden shadow-xl border border-white/10 group mx-auto"
           >
             <img
               ref={avatarRef}

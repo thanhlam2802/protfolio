@@ -1,12 +1,16 @@
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
+
+
+
 html,
 body {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
 }
+
 @keyframes gradient-move {
     0% {
         background-position: 0% 50%;
@@ -25,7 +29,7 @@ body {
     background-size: 200% 200%;
     animation: gradient-move 5s ease infinite;
 }
-html {
-  scroll-behavior: smooth;
-}
 
+html {
+    scroll-behavior: smooth;
+}
